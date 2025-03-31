@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>JavaScript Assignment</h1>
+
+   
+    <section id="task1A">
+        <h2>1A: Variables, Functions, Conditions, and Loops</h2>
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" placeholder="Enter weight">
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" placeholder="Enter height">
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        <p id="bmiResult"></p>
+    </section>
+
+    
+    <section id="task1B">
+        <h2>1B: Pop-up Boxes</h2>
+        <button onclick="showAlert()">Show Alert</button>
+        <button onclick="showConfirm()">Show Confirm</button>
+        <button onclick="showPrompt()">Show Prompt</button>
+        <p id="promptResult"></p>
+    </section>
+
+  
+    <section id="task1C">
+        <h2>1C: Event Handling & DOM Manipulation</h2>
+        <button onclick="changeText()">Change Text</button>
+        <p id="changeableText">This text will change.</p>
+        <div id="hoverDiv" onmouseover="hoverEffect(true)" onmouseout="hoverEffect(false)">
+            Hover over me!
+        </div>
+        <ul id="dynamicList">
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+        <input type="text" id="newItem" placeholder="Add new item">
+        <button onclick="addItem()">Add Item</button>
+    </section>
+
+ 
+    <section id="task1D">
+        <h2>1D: Forms & Validation</h2>
+        <form id="registrationForm" onsubmit="validateForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter name">
+            <span id="nameError" class="error"></span><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter email">
+            <span id="emailError" class="error"></span><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Enter phone">
+            <span id="phoneError" class="error"></span><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter password">
+            <span id="passwordError" class="error"></span><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+   
+    <section id="task1E">
+        <h2>1E: JavaScript Objects & AJAX</h2>
+        <button onclick="fetchWeather()">Fetch Weather</button>
+        <p id="weatherResult"></p>
+    </section>
+
+  
+    <section id="todoList">
+        <h2>To-Do List</h2>
+        <input type="text" id="todoInput" placeholder="Add a new task">
+        <button onclick="addTodo()">Add Task</button>
+        <ul id="todoItems"></ul>
+    </section>
+
+  
+    <section id="chatbot">
+        <h2>Simple Chatbot</h2>
+        <div id="chatbox">
+            <p>Chatbot: Namaskar! Aaj aapki kaise madad kar sakta hu?</p>
+        </div>
+        <input type="text" id="chatInput" placeholder="Type your message">
+        <button onclick="sendMessage()">Send</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

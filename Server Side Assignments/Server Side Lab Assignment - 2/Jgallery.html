@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaipur Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #b22222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #b22222;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jaipur Image Gallery</h1>
+    <p>Explore the beauty and heritage of the Pink City through these stunning images</p>
+  </header>
+
+  <div class="gallery">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Amer_Fort_%28Amber_Fort%29.jpg/800px-Amer_Fort_%28Amber_Fort%29.jpg" alt="Amber Fort">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hawa_Mahal_east_facade.jpg/800px-Hawa_Mahal_east_facade.jpg" alt="Hawa Mahal">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/City_Palace%2C_Jaipur.jpg/800px-City_Palace%2C_Jaipur.jpg" alt="City Palace">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Jantar_Mantar_2011.jpg/800px-Jantar_Mantar_2011.jpg" alt="Jantar Mantar">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Rambagh_Palace.jpg/800px-Rambagh_Palace.jpg" alt="Rambagh Palace">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Fairmont_Jaipur.jpg/800px-Fairmont_Jaipur.jpg" alt="Fairmont Jaipur">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Trident_Jaipur.jpg/800px-Trident_Jaipur.jpg" alt="Trident Jaipur">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Samode_Haveli.jpg/800px-Samode_Haveli.jpg" alt="Samode Haveli">
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Jaipur Image Gallery. All rights reserved.</p>
+  </footer>
+</body>
+</html>

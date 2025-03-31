@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .gallery-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        h1 {
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Beautiful Homes Gallery</h1>
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="https://source.unsplash.com/300x200/?house" alt="Home 1">
+            <img src="https://source.unsplash.com/300x200/?villa" alt="Home 2">
+            <img src="https://source.unsplash.com/300x200/?mansion" alt="Home 3">
+            <img src="https://source.unsplash.com/300x200/?modern-home" alt="Home 4">
+            <img src="https://source.unsplash.com/300x200/?luxury-home" alt="Home 5">
+            <img src="https://source.unsplash.com/300x200/?architecture" alt="Home 6">
+        </div>
+    </div>
+</body>
+</html>
